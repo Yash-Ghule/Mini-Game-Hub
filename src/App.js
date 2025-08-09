@@ -2,13 +2,14 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import GameHub from './components/GameHub';
+import TicTacToe from './components/Games/tic-tac-toe/App';
 
 function App() {
   return (
     <Router basename="/mini-game-hub">
       <Routes>
         <Route path="/" element={<GameHub />} />
-        {/* Future game routes will go here */}
+        <Route path="/tic-tac-toe" element={<TicTacToe />} />
       </Routes>
     </Router>
   );

@@ -1,38 +1,35 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './GameHub.css';
 
 function GameHub() {
+  const games = [
+    { name: 'Tic-Tac-Toe', path: '/tic-tac-toe', img: 'https://upload.wikimedia.org/wikipedia/commons/3/32/Tic_tac_toe.svg', ready: true },
+    { name: 'Rock-Paper-Scissors', path: '/rock-paper-scissors', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/640px-Rock-paper-scissors.svg.png', ready: false },
+    { name: 'Snake Game', path: '/snake', img: 'https://upload.wikimedia.org/wikipedia/commons/0/06/Snake_game.png', ready: false },
+    { name: 'Flappy Bird Clone', path: '/flappy-bird', img: 'https://upload.wikimedia.org/wikipedia/en/0/0a/Flappy_Bird_icon.png', ready: false },
+    { name: 'Brick Breaker', path: '/brick-breaker', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Breakout_game.svg/640px-Breakout_game.svg.png', ready: false },
+    { name: 'Shooting Game', path: '/shooting', img: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Space_Invaders_arcade_game.jpg', ready: false },
+    { name: 'Bike Dodge Game', path: '/bike-dodge', img: 'https://cdn.pixabay.com/photo/2014/04/03/10/32/motorbike-309342_1280.png', ready: false },
+    { name: 'Simon Says', path: '/simon-says', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Simon_Electronic_Game.jpg/640px-Simon_Electronic_Game.jpg', ready: false },
+    { name: 'Mystery Wheel Game', path: '/mystery-wheel', img: 'https://cdn.pixabay.com/photo/2012/04/13/12/19/roulette-32405_1280.png', ready: false },
+  ];
+
   return (
-    <div>
+    <div className="game-hub">
       <h1>🎮 Mini-Game Hub 🎮</h1>
       <div className="game-list">
-        <div className="game-card">
-          <h2>Tic-Tac-Toe</h2>
-          <button disabled>Coming Soon</button>
-        </div>
-        <div className="game-card">
-          <h2>Rock-Paper-Scissors</h2>
-          <button disabled>Coming Soon</button>
-        </div>
-        <div className="game-card">
-          <h2>Snake Game</h2>
-          <button disabled>Coming Soon</button>
-        </div>
-        <div className="game-card">
-          <h2>Flappy Bird Clone</h2>
-          <button disabled>Coming Soon</button>
-        </div>
-        <div className="game-card">
-          <h2>Brick Breaker</h2>
-          <button disabled>Coming Soon</button>
-        </div>
-        <div className="game-card">
-          <h2>Shooting Game</h2>
-          <button disabled>Coming Soon</button>
-        </div>
-        <div className="game-card">
-          <h2>Bike Dodge Game</h2>
-          <button disabled>Coming Soon</button>
-        </div>
+        {games.map((game, index) => (
+          <div className="game-card" key={index}>
+            <img src={game.img} alt={game.name} className="game-img" />
+            <h2>{game.name}</h2>
+            {game.ready ? (
+              <Link to={game.path} className="play-button">Play</Link>
+            ) : (
+              <button disabled className="coming-soon">Coming Soon</button>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );
