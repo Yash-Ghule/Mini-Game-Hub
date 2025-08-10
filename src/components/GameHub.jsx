@@ -5,7 +5,7 @@ import './GameHub.css';
 function GameHub() {
   const games = [
     { name: 'Tic-Tac-Toe', path: '/tic-tac-toe', img: 'https://upload.wikimedia.org/wikipedia/commons/3/32/Tic_tac_toe.svg', ready: true },
-    { name: 'Rock-Paper-Scissors', path: '/rock-paper-scissors', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/640px-Rock-paper-scissors.svg.png', ready: false },
+    { name: 'Rock-Paper-Scissors', path: "/rock-paper-scissors", img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/640px-Rock-paper-scissors.svg.png', ready: true },
     { name: 'Snake Game', path: '/snake', img: 'https://upload.wikimedia.org/wikipedia/commons/0/06/Snake_game.png', ready: false },
     { name: 'Flappy Bird Clone', path: '/flappy-bird', img: 'https://upload.wikimedia.org/wikipedia/en/0/0a/Flappy_Bird_icon.png', ready: false },
     { name: 'Brick Breaker', path: '/brick-breaker', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Breakout_game.svg/640px-Breakout_game.svg.png', ready: false },
