@@ -26,3 +26,15 @@ Mini-Game Hub is an expanding library of interactive games you can play directly
 **Challenges Faced:** Positioning UI elements for a balanced layout and implementing the animated result overlay similar to Tic-Tac-Toe.
 
 ---
+
+## 3️⃣ Snake Game  
+**Tech Stack:** React, CSS, JavaScript (Canvas API)  
+**How to Play:**  
+1. Use the arrow keys (⬆️⬇️⬅️➡️) to move the snake around the board.  
+2. Eat the food squares to grow longer and score points.  
+3. Avoid running into the walls or your own tail — that ends the game.  
+
+**Challenges Faced:**  
+- Implementing smooth grid-based movement while keeping the snake responsive.  
+- Handling collision detection for both walls and self-intersections.  
+- Balancing game speed for both beginners and experienced players.
