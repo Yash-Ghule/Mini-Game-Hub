@@ -1,12 +1,16 @@
 .game-hub {
   text-align: center;
   font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #2a003f; /* Dark purple */
+  min-height: 100vh;
+  padding-bottom: 50px;
 }
 
 h1 {
   margin-top: 30px;
   margin-bottom: 50px;
   font-size: 2.5rem;
+  color: white; /* Title text white */
 }
 
 .game-list {
@@ -17,10 +21,11 @@ h1 {
 }
 
 .game-card {
-  background: #fff;
+  background: #3e3e3e; /* Grey background */
+  color: white; /* Text color white */
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
   width: 200px;
   transition: transform 0.2s ease;
 }
@@ -34,6 +39,8 @@ h1 {
   height: 150px;
   object-fit: contain;
   margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: white; /* Makes icons visible even if transparent */
 }
 
 .play-button {

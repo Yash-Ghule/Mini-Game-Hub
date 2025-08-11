@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import GameHub from './components/GameHub';
 import TicTacToe from './components/Games/tic-tac-toe/App';
 import RockPaperScissors from './components/Games/rock-paper-scissors/RockPaperScissors';
+import SnakeGame from './components/Games/snake/SnakeGame';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<GameHub />} />
         <Route path="/tic-tac-toe" element={<TicTacToe />} />
         <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
+        <Route path="/snake" element={<SnakeGame />} />
       </Routes>
     </Router>
   );
