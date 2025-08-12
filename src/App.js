@@ -5,6 +5,7 @@ import GameHub from './components/GameHub';
 import TicTacToe from './components/Games/tic-tac-toe/App';
 import RockPaperScissors from './components/Games/rock-paper-scissors/RockPaperScissors';
 import SnakeGame from './components/Games/snake/SnakeGame';
+import BrickBreaker from './components/Games/BrickBreaker/BrickBreaker';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/tic-tac-toe" element={<TicTacToe />} />
         <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
         <Route path="/snake" element={<SnakeGame />} />
+        <Route path="/BrickBreaker" element={<BrickBreaker />} />
       </Routes>
     </Router>
   );
