@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Mini-Game-Hub/static/css/main.42ec552e.css",
-    "main.js": "/Mini-Game-Hub/static/js/main.718271af.js",
+    "main.css": "/Mini-Game-Hub/static/css/main.d8a217ad.css",
+    "main.js": "/Mini-Game-Hub/static/js/main.f885638c.js",
     "index.html": "/Mini-Game-Hub/index.html",
-    "main.42ec552e.css.map": "/Mini-Game-Hub/static/css/main.42ec552e.css.map",
-    "main.718271af.js.map": "/Mini-Game-Hub/static/js/main.718271af.js.map"
+    "main.d8a217ad.css.map": "/Mini-Game-Hub/static/css/main.d8a217ad.css.map",
+    "main.f885638c.js.map": "/Mini-Game-Hub/static/js/main.f885638c.js.map"
   },
   "entrypoints": [
-    "static/css/main.42ec552e.css",
-    "static/js/main.718271af.js"
+    "static/css/main.d8a217ad.css",
+    "static/js/main.f885638c.js"
   ]
 }
