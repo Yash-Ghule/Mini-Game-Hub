@@ -3,7 +3,8 @@
 A collection of fun, browser-based mini-games built with React.
 
 ## 📝 About the Hub
-Mini-Game Hub is an expanding library of interactive games you can play directly in your browser. Each game is built as a React component, making the hub modular and easy to extend.
+Mini-Game Hub is an expanding library of interactive games you can play directly in your browser.  
+Each game is built as a React component, making the hub modular and easy to extend.
 
 ---
 
@@ -38,3 +39,21 @@ Mini-Game Hub is an expanding library of interactive games you can play directly
 - Implementing smooth grid-based movement while keeping the snake responsive.  
 - Handling collision detection for both walls and self-intersections.  
 - Balancing game speed for both beginners and experienced players.
+
+---
+
+## 4️⃣ Brick Breaker  
+**Tech Stack:** React, CSS, JavaScript (Canvas API)  
+**How to Play:**  
+1. Use the left and right arrow keys to move the paddle.  
+2. Bounce the ball to break colored bricks.  
+3. Each brick type gives different points.  
+4. Clear all bricks to advance to the next level.  
+5. Lose the ball and it’s game over.
+
+**Challenges Faced:**  
+- Ensuring smooth collision detection between the ball, paddle, and bricks.  
+- Implementing level progression without breaking the game loop.  
+- Keeping performance smooth in the Canvas render loop.
+
+---
