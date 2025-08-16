@@ -57,3 +57,16 @@ Each game is built as a React component, making the hub modular and easy to exte
 - Keeping performance smooth in the Canvas render loop.
 
 ---
+
+## 5️⃣ MyFly 🐝   
+**Tech Stack:** React, CSS  
+**How to Play:**  
+1. Tap/Click or press the spacebar to make the bee flap its wings and fly upward.  
+2. Navigate through gaps between kitchen pipes (obstacles).  
+3. Score a point for each successful pass through a gap.  
+4. The game ends if the bee hits a pipe or falls to the ground.  
+
+**Challenges Faced:**  
+- Replacing the default circle with a bee icon for smoother gameplay visuals.  
+- Setting a kitchen-themed background image and aligning it with the play area.  
+- Balancing difficulty by randomizing gap positions and adjusting pipe spawn rate without making the game impossible.
