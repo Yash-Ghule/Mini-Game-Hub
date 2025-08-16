@@ -1,0 +1,72 @@
+.myfly-root {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  gap: 12px;
+  background: radial-gradient(1200px 600px at 50% 0%, #eef3ff, #dde7f7);
+}
+
+.myfly-stage {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.25),
+    0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.myfly-canvas {
+  display: block;
+  background: #a9d5e8; /* fallback—actual background is drawn in JS */
+}
+
+.myfly-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 15, 25, 0.35);
+  backdrop-filter: blur(2px);
+  display: grid;
+  place-items: center;
+}
+
+.myfly-overtext {
+  text-align: center;
+  color: #fff;
+  user-select: none;
+}
+
+.myfly-overtext .title {
+  font: 700 42px/1.1 Inter, system-ui, Arial, sans-serif;
+  margin-bottom: 6px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.myfly-overtext .subtitle {
+  font: 500 22px/1.2 Inter, system-ui, Arial, sans-serif;
+  margin-bottom: 18px;
+  opacity: 0.95;
+}
+
+.restart-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: #ffd400; /* colored circle */
+  color: #222;
+  font-size: 28px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.12s ease, filter 0.12s ease;
+}
+
+.restart-circle:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.hint {
+  font: 500 12px/1.2 Inter, system-ui, Arial, sans-serif;
+  color: #4b5563;
+  opacity: 0.9;
+}

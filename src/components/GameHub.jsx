@@ -7,7 +7,7 @@ function GameHub() {
     { name: 'Tic-Tac-Toe', path: '/tic-tac-toe', img: 'https://upload.wikimedia.org/wikipedia/commons/3/32/Tic_tac_toe.svg', ready: true },
     { name: 'Rock-Paper-Scissors', path: "/rock-paper-scissors", img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/640px-Rock-paper-scissors.svg.png', ready: true },
     { name: 'Snake Game', path: '/snake', img: process.env.PUBLIC_URL + '/images/snake/snake.png', ready: true },
-    { name: 'Flappy Bird Clone', path: '/flappy-bird', img: 'https://upload.wikimedia.org/wikipedia/en/0/0a/Flappy_Bird_icon.png', ready: false },
+    { name: 'MyFly', path: '/myfly', img: process.env.PUBLIC_URL + '/images/myfly/bee.png', ready: true },
     { name: 'Brick Breaker', path: '/BrickBreaker', img: process.env.PUBLIC_URL + '/images/brick-breaker/brick-breaker.png', ready: true },
     { name: 'Shooting Game', path: '/shooting', img: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Space_Invaders_arcade_game.jpg', ready: false },
     { name: 'Bike Dodge Game', path: '/bike-dodge', img: 'https://cdn.pixabay.com/photo/2014/04/03/10/32/motorbike-309342_1280.png', ready: false },
